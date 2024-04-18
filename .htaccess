@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+
+RewriteEngine on
+
+RewriteCond %{HTTP_HOST} ^(bluearchive.blue-archive.f5.si)
+
+RewriteRule ^(.*) (bluearchive.jp)$1 [R=301,L]
+
+</IfModule>
